@@ -1,4 +1,4 @@
-obj-m=tasklet.o
+obj-m=workqueue.o
 KERN_DIR=/lib/modules/$(shell uname -r)/build
 PWD=$(shell pwd)
 
