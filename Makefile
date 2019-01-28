@@ -1,4 +1,4 @@
-obj-m=kernel_timer.o
+obj-m=tasklet.o
 KERN_DIR=/lib/modules/$(shell uname -r)/build
 PWD=$(shell pwd)
 
