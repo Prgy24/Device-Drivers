@@ -1,1 +1,1 @@
-cmd_/home/debian/DD/day2/dyn_alloc/test.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/day2/dyn_alloc/test.ko /home/debian/DD/day2/dyn_alloc/test.o /home/debian/DD/day2/dyn_alloc/test.mod.o
+cmd_/home/debian/DD/day3/ioctl/test.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/day3/ioctl/test.ko /home/debian/DD/day3/ioctl/test.o /home/debian/DD/day3/ioctl/test.mod.o

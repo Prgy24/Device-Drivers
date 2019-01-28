@@ -1,8 +1,8 @@
-cmd_/home/debian/DD/day2/dyn_alloc/test.o := gcc -Wp,-MD,/home/debian/DD/day2/dyn_alloc/.test.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.6/include -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-headers-3.8.13-bone81/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-headers-3.8.13-bone81/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Wno-error=pointer-sign -fno-stack-protector -std=gnu89 -O2 -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -mthumb -Wa,-mimplicit-it=always -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -fno-optimize-sibling-calls -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(test)"  -D"KBUILD_MODNAME=KBUILD_STR(test)" -c -o /home/debian/DD/day2/dyn_alloc/.tmp_test.o /home/debian/DD/day2/dyn_alloc/test.c
+cmd_/home/debian/DD/day3/ioctl/test.o := gcc -Wp,-MD,/home/debian/DD/day3/ioctl/.test.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.6/include -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-headers-3.8.13-bone81/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-headers-3.8.13-bone81/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Wno-error=pointer-sign -fno-stack-protector -std=gnu89 -O2 -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -mthumb -Wa,-mimplicit-it=always -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE  -fno-optimize-sibling-calls -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(test)"  -D"KBUILD_MODNAME=KBUILD_STR(test)" -c -o /home/debian/DD/day3/ioctl/.tmp_test.o /home/debian/DD/day3/ioctl/test.c
 
-source_/home/debian/DD/day2/dyn_alloc/test.o := /home/debian/DD/day2/dyn_alloc/test.c
+source_/home/debian/DD/day3/ioctl/test.o := /home/debian/DD/day3/ioctl/test.c
 
-deps_/home/debian/DD/day2/dyn_alloc/test.o := \
+deps_/home/debian/DD/day3/ioctl/test.o := \
   include/linux/init.h \
     $(wildcard include/config/broken/rodata.h) \
     $(wildcard include/config/modules.h) \
@@ -476,7 +476,138 @@ deps_/home/debian/DD/day2/dyn_alloc/test.o := \
     $(wildcard include/config/arm/dma/use/iommu.h) \
     $(wildcard include/config/arch/omap.h) \
   include/linux/pm_wakeup.h \
+  include/linux/slab.h \
+    $(wildcard include/config/slab/debug.h) \
+    $(wildcard include/config/kmemcheck.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/slob.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/debug/slab.h) \
+    $(wildcard include/config/slab.h) \
+  include/linux/slab_def.h \
+    $(wildcard include/config/memcg/kmem.h) \
+  include/linux/kmalloc_sizes.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/asm/uaccess.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/asm/unified.h \
+    $(wildcard include/config/arm/asm/unified.h) \
+  include/linux/circ_buf.h \
+  include/linux/sched.h \
+    $(wildcard include/config/sched/debug.h) \
+    $(wildcard include/config/no/hz.h) \
+    $(wildcard include/config/lockup/detector.h) \
+    $(wildcard include/config/detect/hung/task.h) \
+    $(wildcard include/config/core/dump/default/elf/headers.h) \
+    $(wildcard include/config/sched/autogroup.h) \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/taskstats.h) \
+    $(wildcard include/config/audit.h) \
+    $(wildcard include/config/cgroups.h) \
+    $(wildcard include/config/inotify/user.h) \
+    $(wildcard include/config/fanotify.h) \
+    $(wildcard include/config/posix/mqueue.h) \
+    $(wildcard include/config/keys.h) \
+    $(wildcard include/config/perf/events.h) \
+    $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/task/delay/acct.h) \
+    $(wildcard include/config/fair/group/sched.h) \
+    $(wildcard include/config/rt/group/sched.h) \
+    $(wildcard include/config/cgroup/sched.h) \
+    $(wildcard include/config/blk/dev/io/trace.h) \
+    $(wildcard include/config/rcu/boost.h) \
+    $(wildcard include/config/compat/brk.h) \
+    $(wildcard include/config/cc/stackprotector.h) \
+    $(wildcard include/config/sysvipc.h) \
+    $(wildcard include/config/rt/mutexes.h) \
+    $(wildcard include/config/task/xacct.h) \
+    $(wildcard include/config/cpusets.h) \
+    $(wildcard include/config/futex.h) \
+    $(wildcard include/config/fault/injection.h) \
+    $(wildcard include/config/latencytop.h) \
+    $(wildcard include/config/function/graph/tracer.h) \
+    $(wildcard include/config/uprobes.h) \
+    $(wildcard include/config/have/unstable/sched/clock.h) \
+    $(wildcard include/config/irq/time/accounting.h) \
+    $(wildcard include/config/proc/fs.h) \
+    $(wildcard include/config/cfs/bandwidth.h) \
+    $(wildcard include/config/stack/growsup.h) \
+    $(wildcard include/config/mm/owner.h) \
+  include/uapi/linux/sched.h \
+  include/linux/mm_types.h \
+    $(wildcard include/config/split/ptlock/cpus.h) \
+    $(wildcard include/config/have/cmpxchg/double.h) \
+    $(wildcard include/config/have/aligned/struct/page.h) \
+    $(wildcard include/config/want/page/debug/flags.h) \
+    $(wildcard include/config/aio.h) \
+    $(wildcard include/config/mmu/notifier.h) \
+    $(wildcard include/config/transparent/hugepage.h) \
+  include/linux/auxvec.h \
+  include/uapi/linux/auxvec.h \
+  arch/arm/include/generated/asm/auxvec.h \
+  /usr/src/linux-headers-3.8.13-bone81/include/uapi/asm-generic/auxvec.h \
+  include/linux/page-debug-flags.h \
+    $(wildcard include/config/page/poisoning.h) \
+    $(wildcard include/config/page/guard.h) \
+    $(wildcard include/config/page/debug/something/else.h) \
+  include/linux/uprobes.h \
+    $(wildcard include/config/arch/supports/uprobes.h) \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/asm/mmu.h \
+    $(wildcard include/config/cpu/has/asid.h) \
+  arch/arm/include/generated/asm/cputime.h \
+  include/asm-generic/cputime.h \
+  include/linux/sem.h \
+  include/uapi/linux/sem.h \
+  include/linux/ipc.h \
+  include/uapi/linux/ipc.h \
+  arch/arm/include/generated/asm/ipcbuf.h \
+  /usr/src/linux-headers-3.8.13-bone81/include/uapi/asm-generic/ipcbuf.h \
+  arch/arm/include/generated/asm/sembuf.h \
+  /usr/src/linux-headers-3.8.13-bone81/include/uapi/asm-generic/sembuf.h \
+  include/linux/signal.h \
+  include/uapi/linux/signal.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/asm/signal.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi/asm/signal.h \
+  /usr/src/linux-headers-3.8.13-bone81/include/uapi/asm-generic/signal-defs.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi/asm/sigcontext.h \
+  arch/arm/include/generated/asm/siginfo.h \
+  include/asm-generic/siginfo.h \
+  include/uapi/asm-generic/siginfo.h \
+  include/linux/proportions.h \
+  include/linux/seccomp.h \
+    $(wildcard include/config/seccomp.h) \
+    $(wildcard include/config/seccomp/filter.h) \
+  include/uapi/linux/seccomp.h \
+  /usr/src/linux-headers-3.8.13-bone81/arch/arm/include/asm/seccomp.h \
+  include/linux/unistd.h \
+  include/linux/rtmutex.h \
+    $(wildcard include/config/debug/rt/mutexes.h) \
+  include/linux/plist.h \
+    $(wildcard include/config/debug/pi/list.h) \
+  include/linux/resource.h \
+  include/uapi/linux/resource.h \
+  arch/arm/include/generated/asm/resource.h \
+  include/asm-generic/resource.h \
+  include/uapi/asm-generic/resource.h \
+  include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+    $(wildcard include/config/timerfd.h) \
+  include/linux/timerqueue.h \
+  include/linux/task_io_accounting.h \
+    $(wildcard include/config/task/io/accounting.h) \
+  include/linux/latencytop.h \
+  include/linux/cred.h \
+    $(wildcard include/config/debug/credentials.h) \
+  include/linux/key.h \
+  include/linux/selinux.h \
+    $(wildcard include/config/security/selinux.h) \
+  include/linux/llist.h \
+    $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
+  include/linux/aio.h \
+  /usr/src/linux-headers-3.8.13-bone81/include/uapi/linux/aio_abi.h \
+  include/linux/uio.h \
+  include/uapi/linux/uio.h \
+  /home/debian/DD/day3/ioctl/ioctl_test.h \
 
-/home/debian/DD/day2/dyn_alloc/test.o: $(deps_/home/debian/DD/day2/dyn_alloc/test.o)
+/home/debian/DD/day3/ioctl/test.o: $(deps_/home/debian/DD/day3/ioctl/test.o)
 
-$(deps_/home/debian/DD/day2/dyn_alloc/test.o):
+$(deps_/home/debian/DD/day3/ioctl/test.o):

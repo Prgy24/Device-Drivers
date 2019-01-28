@@ -1,8 +1,8 @@
-cmd_/home/debian/DD/day2/dyn_alloc/test.mod.o := gcc -Wp,-MD,/home/debian/DD/day2/dyn_alloc/.test.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.6/include -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-headers-3.8.13-bone81/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-headers-3.8.13-bone81/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Wno-error=pointer-sign -fno-stack-protector -std=gnu89 -O2 -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -mthumb -Wa,-mimplicit-it=always -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(test.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(test)" -DMODULE  -fno-optimize-sibling-calls -c -o /home/debian/DD/day2/dyn_alloc/test.mod.o /home/debian/DD/day2/dyn_alloc/test.mod.c
+cmd_/home/debian/DD/day3/ioctl/test.mod.o := gcc -Wp,-MD,/home/debian/DD/day3/ioctl/.test.mod.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/4.6/include -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include -Iarch/arm/include/generated  -Iinclude -I/usr/src/linux-headers-3.8.13-bone81/arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I/usr/src/linux-headers-3.8.13-bone81/include/uapi -Iinclude/generated/uapi -include /usr/src/linux-headers-3.8.13-bone81/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-omap2/include -Iarch/arm/plat-omap/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -Wno-error=pointer-sign -fno-stack-protector -std=gnu89 -O2 -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -mthumb -Wa,-mimplicit-it=always -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(test.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(test)" -DMODULE  -fno-optimize-sibling-calls -c -o /home/debian/DD/day3/ioctl/test.mod.o /home/debian/DD/day3/ioctl/test.mod.c
 
-source_/home/debian/DD/day2/dyn_alloc/test.mod.o := /home/debian/DD/day2/dyn_alloc/test.mod.c
+source_/home/debian/DD/day3/ioctl/test.mod.o := /home/debian/DD/day3/ioctl/test.mod.c
 
-deps_/home/debian/DD/day2/dyn_alloc/test.mod.o := \
+deps_/home/debian/DD/day3/ioctl/test.mod.o := \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
@@ -405,6 +405,6 @@ deps_/home/debian/DD/day2/dyn_alloc/test.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/debian/DD/day2/dyn_alloc/test.mod.o: $(deps_/home/debian/DD/day2/dyn_alloc/test.mod.o)
+/home/debian/DD/day3/ioctl/test.mod.o: $(deps_/home/debian/DD/day3/ioctl/test.mod.o)
 
-$(deps_/home/debian/DD/day2/dyn_alloc/test.mod.o):
+$(deps_/home/debian/DD/day3/ioctl/test.mod.o):
