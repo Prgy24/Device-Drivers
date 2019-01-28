@@ -6,7 +6,7 @@ int main()
 {
 
         int fd,ret;
-        char buf[SIZE]="Hello DESD\n";
+        char buf[SIZE]="Hello world\n";
 
         fd=open("/dev/test0",O_RDWR);
         if(fd<0)
