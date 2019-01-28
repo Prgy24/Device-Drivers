@@ -9,7 +9,7 @@ int main()
         int fd,ret;
         char buf[SIZE];
 
-        fd = open("/dev/test0", O_RDWR);
+        fd = open("/dev/circ_buf0", O_RDWR);
 
         if(fd<0)
         {
