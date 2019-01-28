@@ -1,0 +1,1 @@
+cmd_/home/debian/DD/export_symbol/add_mod/add.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/export_symbol/add_mod/add.ko /home/debian/DD/export_symbol/add_mod/add.o /home/debian/DD/export_symbol/add_mod/add.mod.o

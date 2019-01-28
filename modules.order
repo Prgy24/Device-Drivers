@@ -1,1 +1,2 @@
-kernel//home/debian/DD/day5/workqueue/workqueue.ko
+kernel//home/debian/DD/export_symbol/add_mod/add.ko
+kernel//home/debian/DD/export_symbol/export_sym_mod/export_sym.ko
