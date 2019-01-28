@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<fcntl.h>
 
@@ -20,3 +21,11 @@ int main()
         printf("data read is %s\n",buf);
         return 0;
 }
+
+
+
+
+
+
+
+
