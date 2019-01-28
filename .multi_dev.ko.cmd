@@ -1,0 +1,1 @@
+cmd_/home/debian/DD/day4/multi_dev/multi_dev.ko := ld -EL -r  -T /usr/src/linux-headers-3.8.13-bone81/scripts/module-common.lds --build-id  -o /home/debian/DD/day4/multi_dev/multi_dev.ko /home/debian/DD/day4/multi_dev/multi_dev.o /home/debian/DD/day4/multi_dev/multi_dev.mod.o

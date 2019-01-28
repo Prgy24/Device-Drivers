@@ -6,9 +6,9 @@ int main()
 {
 
         int fd,ret;
-        char buf[SIZE]="Hello World\n";
+        char buf[SIZE]="India is Best\n";
 
-        fd=open("/dev/test1",O_RDWR);
+        fd=open("/dev/test2",O_RDWR);
         if(fd<0)
         {
                 perror("Error operation\n");

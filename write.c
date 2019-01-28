@@ -15,7 +15,14 @@ int main()
         return -1;
         }
 
-        write(fd,buf,sizeof(buf));
+        ret = write(fd,buf,sizeof(buf));
+
+	if(ret > 0)
+		printf("Error writing to device\n");
+
+	else
+		printf("Successfully written\n");
+
         return 0;
 }
 
