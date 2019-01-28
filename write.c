@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<fcntl.h>
 #define SIZE 20
+
 int main()
 {
 
@@ -14,7 +15,14 @@ int main()
         return -1;
         }
 
-         write(fd,buf,sizeof(buf));
+       ret =  write(fd,buf,sizeof(buf));
+	if(ret != sizeof(buf))
+	{
+		printf("Error writing to device\n");
+	}
+	else
+		printf("successfully written\n");
+
         return 0;
 }
 
